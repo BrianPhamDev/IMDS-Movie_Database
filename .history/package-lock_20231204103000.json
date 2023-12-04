@@ -1,11 +1,11 @@
 {
-  "name": "imds_movie_database",
+  "name": "tmdb_movie_database",
   "version": "0.1.0",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
-      "name": "imds_movie_database",
+      "name": "tmdb_movie_database",
       "version": "0.1.0",
       "dependencies": {
         "eslint-config-prettier": "^9.1.0",
