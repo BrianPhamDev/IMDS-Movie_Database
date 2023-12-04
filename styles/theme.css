@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Medium.ttf");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-SemiBold.ttf");
+  font-weight: semibold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+  --bg-gradient: #020a01;
+  --text-primary: #f5f5f6;
+  --text-secondary: #c4c4c4;
+  --stroke: #888888;
+  --bg-button: rgba(111, 111, 111, 0.35);
+  --bg-hero-card: rgba(23, 25, 29, 0.76);
+  --bg-meta: rgba(23, 25, 29, 0.7);
+  --brand-primary: #f0b33a;
+  --brand-gradient-1: #ffe606;
+  --brand-gradient-2: #b3ea3f;
+  --brand-gradient-3: #3af099;
+}
+
+body {
+  font-family: "Gilroy", Arial, sans-serif;
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--text-primary);
+  }
+
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+  .stroke {
+    color: var(--stroke);
+  }
+  .bg-gradient {
+    background: linear-gradient(rgba(118, 118, 118, 0.1), rgba(0, 0, 0, 0)),
+      var(--bg-gradient);
+  }
+  .bg-button {
+    background: var(--bg-button);
+  }
+  .bg-hero-card {
+    background: var(--bg-hero-card);
+  }
+  .bg-meta {
+    background: var(--bg-meta);
+  }
+
+  .heading-1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px; /* 120% */
+    letter-spacing: -1.2px;
+  }
+
+  .title {
+    @apply text-base md:text-lg font-semibold tracking-normal leading-7 md:leading-8;
+  }
+
+  .bodycopy {
+    @apply text-sm font-normal leading-6;
+  }
+  .meta-heading {
+    @apply text-base md:text-lg font-bold leading-7 md:leading-8;
+  }
+  .meta-bodycopy {
+    @apply text-sm md:text-base font-normal leading-5 md:leading-6;
+  }
+  .meta-info {
+    @apply text-xs leading-4;
+  }
+}
