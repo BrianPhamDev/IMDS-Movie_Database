@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 
-import "./global.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "IMDS - Movie Database",
@@ -15,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-gradient h-screen w-screen px-4 md:px-8`}>
-        {children}
-      </body>
+      <body className={`bg-gradient h-screen w-screen`}>{children}</body>
     </html>
   );
 }

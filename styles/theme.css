@@ -43,6 +43,7 @@
 
 body {
   font-family: "Gilroy", Arial, sans-serif;
+  font-weight: normal;
 }
 
 @layer utilities {
@@ -84,6 +85,17 @@ body {
 
   .bodycopy {
     @apply text-sm font-normal leading-6;
+  }
+  .bg-nav {
+    background: var(
+      --bg-nav,
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0) 0.01%,
+        rgba(255, 255, 255, 0.12) 100%
+      )
+    );
   }
   .meta-heading {
     @apply text-base md:text-lg font-bold leading-7 md:leading-8;
