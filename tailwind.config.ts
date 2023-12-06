@@ -17,16 +17,14 @@ const config: Config = {
       },
     },
     extend: {
+      screens: {
+        tablet: "594px",
+      },
       colors: {
         "brand-primary": "#f0b33a",
         "brand-gradient-1": "#ffe606",
         "brand-gradient-2": "#b3ea3f",
         "brand-gradient-3": "#3af099",
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
         "accordion-down": {
