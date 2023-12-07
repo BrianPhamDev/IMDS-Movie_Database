@@ -26,17 +26,18 @@ const PopularSection = ({ data }: Props) => {
               style={{ width: "100%", height: "100%" }}
               alt="IMDS"
               className="object-cover"
+              priority
             />
 
             <div className="bg-hero-card absolute bottom-0 left-0 z-10 flex max-w-[508px] -translate-y-8 translate-x-8 flex-col gap-2 overflow-hidden rounded-sm border-l-[3px] border-solid border-brand-primary py-4 pl-6 pr-12 max-sm:max-w-[256px] max-sm:-translate-y-12 max-sm:translate-x-4 max-sm:px-3 tablet:flex">
               <div className="flex-start gap-3">
                 <h1 className="hero-heading">
-                  {data[indexs[0]].original_title} (
+                  {data[indexs[0]].title} (
                   {getYear(data[indexs[0]].release_date)})
                 </h1>
                 <Rating rating={data[indexs[0]].popularity}></Rating>
               </div>
-              <p className="bodycopy text-secondary truncate-4-lines max-sm:hidden">
+              <p className="bodycopy text-secondary truncate-3-lines max-sm:hidden">
                 {data[indexs[0]].overview}
               </p>
             </div>
@@ -53,7 +54,7 @@ const PopularSection = ({ data }: Props) => {
                 movieId={item.id}
                 releaseDate={item.release_date}
                 popularity={item.popularity}
-                originalTitle={item.original_title}
+                originalTitle={item.title}
               ></HeroItemCard>
             );
           })}

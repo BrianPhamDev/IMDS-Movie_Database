@@ -5,7 +5,7 @@ import NavButton from "../button/NavButton";
 
 const Navbar = () => {
   return (
-    <nav className="bg-nav mb-4 w-full">
+    <nav className="bg-nav mb-4 w-full ">
       <div className="flex-between mx-auto max-w-[1376px] p-4 md:mb-10  md:px-8 md:py-6">
         <Link href="/" className="order-2 flex items-center gap-1">
           <div className="w-[63px] md:w-[96px]">

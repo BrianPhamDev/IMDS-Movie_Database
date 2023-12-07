@@ -20,7 +20,6 @@ const HeroItemCard = async ({
 }: Props) => {
   const image = await fetchMoviePoster(movieId);
 
-  console.log(imageUrl(image.backdrops[0].file_path, "w342"));
   return (
     <div className="flex-start gap-8">
       <Link

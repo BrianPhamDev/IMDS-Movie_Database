@@ -9,7 +9,7 @@ interface Props {
 
 const NavButton = ({ href, children }: Props) => {
   return (
-    <Button className="text-primary hover:bg-button flex-center hidden rounded-full px-5 py-4 text-base transition md:flex">
+    <Button className="text-primary hover:bg-button flex-center hidden rounded-full bg-transparent px-5 py-4 text-base transition md:flex">
       <Link href={href}>{children}</Link>
     </Button>
   );

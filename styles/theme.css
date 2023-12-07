@@ -28,7 +28,7 @@
 }
 
 :root {
-  --bg-gradient: #020a01;
+  --bg-primary: #020a01;
   --text-primary: #f5f5f6;
   --text-secondary: #c4c4c4;
   --stroke: #888888;
@@ -58,9 +58,19 @@ body {
   .stroke {
     color: var(--stroke);
   }
+
+  .bg-primary {
+    background: var(--bg-primary);
+  }
   .bg-gradient {
-    background: linear-gradient(rgba(118, 118, 118, 0.1), rgba(0, 0, 0, 0)),
-      var(--bg-gradient);
+    background: linear-gradient(
+        180deg,
+        rgba(118, 118, 118, 0.1) 11.31%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      var(--bg-primary);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   .bg-button {
     background: var(--bg-button);
@@ -87,13 +97,27 @@ body {
   .bodycopy {
     @apply text-sm font-normal leading-6;
   }
+
+  .bg-footer {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
   .bg-nav {
     background: linear-gradient(
         180deg,
         rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.12) 100%
+        rgba(255, 255, 255, 0.1) 100%
       ),
-      #10140f;
+      var(--bg-primary);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
   .meta-heading {
     @apply text-base md:text-lg font-bold leading-7 md:leading-8;

@@ -7,7 +7,26 @@ export default async function Home() {
   return (
     <>
       <PopularSection data={data.results}></PopularSection>
-      <OtherSection></OtherSection>
+      <OtherSection
+        heading="Now Playing"
+        category="now_playing"
+        className="mt-20"
+      ></OtherSection>
+      <OtherSection
+        heading="Up Coming"
+        category="upcoming"
+        className="mt-20"
+      ></OtherSection>
+      <OtherSection
+        heading="Top Rated"
+        category="top_rated"
+        className="mt-20"
+      ></OtherSection>
+      <OtherSection
+        heading="Popular"
+        category="popular"
+        className="mt-20"
+      ></OtherSection>
     </>
   );
 }

@@ -13,8 +13,8 @@ const CategorySection = ({ category }: Props) => {
     <div className="flex-between">
       <Heading>{category}</Heading>
 
-      <Button className="flex-start gap-1">
-        <Link href={"/"} className="text-brand-gradient-3">
+      <Button className="flex-start gap-1 bg-transparent">
+        <Link href={"/"} className=" text-brand-gradient-3">
           See more
         </Link>
         <div className="h-full w-full">

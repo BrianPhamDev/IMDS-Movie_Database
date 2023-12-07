@@ -1,10 +1,11 @@
+import Footer from "@/components/shared/footer/Footer";
 import Navbar from "@/components/shared/navbar/Navbar";
 import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <header className="sticky top-0 z-50 w-full ">
+      <header className="sticky inset-x-0 top-0 z-50 w-full">
         <Navbar></Navbar>
       </header>
       <main className="">
@@ -12,6 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
           {children}
         </section>
       </main>
+      <Footer></Footer>
     </>
   );
 };
